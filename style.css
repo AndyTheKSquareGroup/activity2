@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 7px;
+}
+/* GENERAL */
+.general_content{
+    background: rgb(117, 199, 219);
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+.lecture{
+    padding: 10px;
+    margin: 20px;
+    background: rgba(163, 219, 233, 0.794);
+}
+
+/* ABOUT KINCHIL */
+
+.about_kinchil{
+    background: rgb(194, 240, 240);
+    margin: 10px;
+    padding: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.phrase{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.phrase .link_felipa{
+    font-style: normal;
+}
+
+/* FAVORITE FOOD */
+
+.favorite_food{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.panuchos, .sopes {
+    background: rgb(194, 240, 240);;
+}
+
+/* RESPONSIVE DESING */
+@media (max-width: 900px){
+    .general_content .lecture .about_kinchil img{
+        width: 400px;
+        height: 400px;
+    }
+    .panuchos h2{
+        text-align: center;
+    }
+    .sopes h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    .about_kinchil{
+        background: none;
+    }
+    .sopes, .panuchos{
+        background: none;
+    }
+    .favorite_food{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+       padding: 5px;
+    }
+    .general_content .lecture .about_kinchil img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
